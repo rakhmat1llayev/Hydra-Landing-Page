@@ -665,6 +665,11 @@ header {
     font-family: var(--font-family);
     color: rgba(52, 48, 69, 1);
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.about-hydro button:hover {
+    opacity: 0.6;
 }
 
 @media (max-width:1250px) {
@@ -871,6 +876,7 @@ header {
     line-height: 19px;
 }
 
+
 .card {
     width: 310px;
     height: 511px;
@@ -878,7 +884,21 @@ header {
     border-radius: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+}
+
+.img-wrapper{
+    width: 190px;
+    height: 190px;
+    background-color: rgba(14, 14, 14, 0.32);
+    border-radius: 100%;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 .card-wrapper {
@@ -892,10 +912,8 @@ header {
 
 
 .mask-group {
-    /* position: absolute; */
-    width: 190px;
-    height: 190px;
-    margin: 10px auto;
+    width: 170px;
+    height: 170px;
 }
 
 .card h1 {
@@ -929,7 +947,12 @@ header {
     text-transform: uppercase;
     color: rgba(52, 48, 69, 1);
     border: none;
-    margin: 10px auto;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.card button:hover {
+    opacity: 0.6;
 }
 
 @media(max-width:1200px) {
@@ -1014,6 +1037,8 @@ header {
     height: auto;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .tech-section-text {
@@ -1022,6 +1047,15 @@ header {
     justify-content: center;
     align-items: center;
     margin: 30px auto;
+    /* background-image: url(/assets/Mask\ group\ \(7\).png); */
+}
+
+.tech-section-text img{
+    position: relative;
+}
+
+.tech-text{
+    position: absolute;
 }
 
 .tech-section-text h1 {
@@ -1048,17 +1082,42 @@ header {
     align-items: center;
 }
 
-.tech-section-text img {
-    position: relative;
+.scroll_wrapper {
+    position: absolute;
+    margin-top: 290px;
+    width: 90px;
+    height: 90px;
+    background-color: rgba(14, 14, 14, 0.32);
+    border-radius: 100%;
+    padding: 10px 10px;
+    display: flex;
 }
 
-.tech-text {
-    position: absolute;
+.scroll {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: rgba(129, 118, 175, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.scroll:hover{
+    opacity: 0.6;
 }
 
 @media (max-width:1290px) {
     .tech-section-text img {
         width: 1000px;
+    }
+
+
+    .scroll_wrapper{
+        margin-top: 230px;
+        width: 70px;
+        height: 70px;
     }
 
     .hydra-tech img {
@@ -1090,6 +1149,10 @@ header {
         height: 282px;
         margin-top: 0px;
     }
+
+    .scroll_wrapper{
+        margin-top: 165px;
+    }
 }
 
 @media (max-width:700px) {
@@ -1109,6 +1172,10 @@ header {
     .hydra-tech img:last-child {
         width: 200px;
         height: 200px;
+    }
+
+    .scroll_wrapper{
+        display: none;
     }
 }
 
@@ -1184,8 +1251,21 @@ header {
     padding: 50px 50px;
 }
 
+.circle-shadow{
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background-color: rgba(13, 13, 13, 0.32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .counter img {
     position: absolute;
+    width: 135px;
+    height: 135px;
 }
 
 .number h1 {
@@ -1277,6 +1357,13 @@ header {
 }
 
 @media (max-width:840px) {
+    .number-card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
     .counter-wrapper {
         display: none;
     }
@@ -1361,7 +1448,12 @@ header {
     padding-left: 30px;
     background-image: radial-gradient(rgba(64, 58, 95, 1), rgba(33, 30, 46, 1));
     outline: 1px solid rgba(255, 255, 255, 1);
-    opacity: 1;
+    font-size: 20px;
+    font-family: var(--font-family);
+}
+
+.option-section-inputs input::placeholder {
+    color: white;
 }
 
 .option-section-inputs-bottom {
@@ -1385,7 +1477,12 @@ header {
     display: flex;
     padding-left: 30px;
     margin-bottom: 30px;
+    font-size: 20px;
+    font-family: var(--font-family);
+}
 
+.option-section-inputs-bottom input::placeholder {
+    color: white;
 }
 
 .option-section-inputs-bottom input:last-child {
@@ -1397,6 +1494,8 @@ header {
     outline: 1px solid rgba(255, 255, 255, 1);
     text-align: start;
     padding: 0px 30px;
+    font-family: var(--font-family);
+    font-size: 20px;
 }
 
 .option-box button {
@@ -1411,6 +1510,11 @@ header {
     font-family: var(--font-family);
     color: rgba(52, 48, 69, 1);
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.option-box button:hover {
+    opacity: 0.6;
 }
 
 @media (max-width:1220px) {
@@ -1580,7 +1684,7 @@ header {
     align-items: center;
     width: 100%;
     height: auto;
-    padding-bottom: 60px;
+    padding: 60px 0px;
 }
 
 .footer-contents li {
@@ -1628,6 +1732,11 @@ header {
     font-weight: 700;
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
+}
+
+.apps-icons button:hover{
+    opacity: 0.6;
 }
 
 .info-about-hydra {
@@ -1647,56 +1756,52 @@ header {
     margin: 40px 0;
 }
 
-.info-about-hydra img{
+.info-about-hydra img {
     width: 90%;
 }
 
-@media (max-width:930px){
-    .footer-section{
+@media (max-width:930px) {
+    .footer-section {
         display: flex;
         flex-direction: column;
         margin-bottom: 50px;
     }
 
-    .border{
+    .border {
         display: none;
     }
 
-    .footer-text{
+    .footer-text {
         display: none;
     }
 
-    .footer-contents{
+    .footer-contents {
         display: none;
     }
 
-    .apps-icons{
+    .apps-icons {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .apps-icons p{
+    .apps-icons p {
         text-align: center;
         padding: 25px;
         width: 100%;
     }
 
-    .icons{
+    .icons {
         display: flex;
         gap: 15px;
     }
 }
 
-@media (max-width:650px){
+@media (max-width:650px) {
 
-    .info-about-hydra{
+    .info-about-hydra {
         padding: 20px 25px;
         padding-bottom: 80px;
     }
 }
-
-
-
-
